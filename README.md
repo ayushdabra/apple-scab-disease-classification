@@ -1,9 +1,9 @@
 <p>
-<a href="">
+<a href="https://drive.google.com/file/d/1YlxBp13HziZzH6FIUDSWntxGawJMCkfA/view?usp=sharing">
 <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a> 
 
-<a href="">
+<a href="https://mybinder.org/v2/gh/ayushdabra/apple-scab-disease-classification/HEAD">
 <img src="https://mybinder.org/badge_logo.svg" alt="launch binder"/>
 </a>
 </p>
