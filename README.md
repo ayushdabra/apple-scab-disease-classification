@@ -264,7 +264,13 @@ If we take a closer look at the class activation maps in Fig. 10, it is pretty c
 In this work, I have investigated the use of deep learning based CNN model to detect scab disease in digital images of apples. The proposed custom VGG16 model was able to detect scab disease with decent accuracy. Accuracy assessments of the model on the test set showed that the CNNs are promising about generalization in detecting the scab disease in digital images. The methodology outlined in this work can be replicated to classify similar kinds of diseases in other plant species as well. The results obtained by the model showed that the dataset should be more balanced and the image acquisition process should be monitored in a way to collect an equal number of images of all classes. Future work may involve investigating the capabilities of different state-of-the-art CNN architectures on the dataset.
 </p>
 
-## 10. References
+## 10. Acknowledgement
+
+<p align="justify">
+I express my deep sense of gratitude to <a href="https://www.linkedin.com/in/parthiban-srinivasan-183608b/">Dr. Parthiban Srinivasan</a>, without his valuable guidance and supervision the project couldn't have been completed.
+</p>
+
+## 11. References
 
 <p align="justify">
 <ol type="1">
