@@ -10,10 +10,10 @@
 
 # Apple Scab Detection Using Deep Learning Based CNN
 
-## Abstract
+## *Abstract*
 
 <p align="justify">
-In this work, I address the task of  “Apple Scab Detection Using Deep Learning Based CNN” for the DSE-309 Advanced Programming in Python course. This project's scope is to detect apple scab in the early stage of development using deep learning based convolutional neural network (CNN). The dataset used for this project has two classes to predict, viz. ‘Healthy’ and ‘Scab’. Since the dataset has imbalanced classes, artificial data augmentation techniques are used for augmenting the under-represented ‘Healthy’ class. The VGG-16 CNN model pre-trained on the ImageNet dataset is used as a feature extractor and a custom classifier is added to the model for the task of classification. Considering the class-imbalance present in the dataset, the custom VGG-16 CNN  performed well, achieving an overall accuracy of 85.71% on the test set.
+In this work, I address the task of  “Apple Scab Detection Using Deep Learning Based CNN” for the DSE-309 Advanced Programming in Python course. This project's scope is to detect apple scab in the early stage of development using deep learning based convolutional neural network (CNN). The dataset used for this project has two classes to predict, viz. ‘Healthy’ and ‘Scab’. Since the dataset has imbalanced classes, artificial data augmentation techniques have been used for augmenting the under-represented ‘Healthy’ class. The VGG-16 CNN model pre-trained on the ImageNet dataset is used as a feature extractor and a custom classifier is added to the model for the task of classification. Considering the class-imbalance present in the dataset, the custom VGG-16 CNN  performed well, achieving an overall accuracy of 85.71% on the test set.
 </p>
 
 ## 1. Tech Stack
@@ -177,7 +177,7 @@ In this project, I have implemented a custom VGG16 CNN model. VGG16 model that i
 ## 7. Training Details
 
 <p align="justify">
-The model is trained for 30 epochs, with an initial learning rate of 1.00×10<sup>−2</sup> and a batch size of 16. Model checkpoint callback was used to save the best weights after each epoch; the callback monitored validation loss. A learning rate scheduler with an exponential rate decay schedule was also used for the training process. Early stopping callback was used for stopping the training process when validation loss stopped improving. Apart from these, a CSV logger callback was used for writing the results of each epoch to the CSV file. The same test set has been used for cross-validation during the model training process.
+The model is trained for 30 epochs, with an initial learning rate of 1.00×10<sup>−2</sup> and a batch size of 16. Model checkpoint callback was used to save the best weights after each epoch; the callback monitored validation loss. A learning rate scheduler with an exponential rate decay schedule was also used for the training process. Early stopping callback was used for stopping the training process when validation loss stopped improving. Apart from these, a CSV logger callback was used for writing the results of each epoch to the CSV file. The same test set has been used for cross-validation during the model training process. To minimize the effect of class imbalance, class weights have been calculated and used while training, so that the model could pay more attention to samples from the under-represented ‘Healthy’ class.
 </p>
 
 ## 8. Results
@@ -220,7 +220,7 @@ Each epoch took around fifty-six seconds to train. The model minimized the categ
 </div>
 
 <p align="center"><b>Table 3. </b>Training summary.</p>
-<p align="center">(Note: Best model's loss and accuracy are mentioned in the above table.)</p>
+<p align="center">(Note: Best model's loss and accuracy are mentioned in the table.)</p>
 
 <p align="center"><img width = "100%" height= "auto" src="./readme_images/model_metrics_plot.png" /></p>
 
@@ -270,7 +270,7 @@ In this work, I have investigated the use of deep learning based CNN model to de
 <ol type="1">
   <li>S. Kodors, G. Lacis, O. Sokolova, V. Zhukovs, I. Apeinans and T. Bartulsons. 2021. Apple Scab Detection using CNN and Transfer Learning. <i>Agronomy Research</i>, 19(2), 507–519. doi: 10.15159/AR.21.045.</li>
   <li>A. Buslaev, V. I. Iglovikov, E. Khvedchenya, A. Parinov, M. Druzhinin, and A. A. Kalinin, “Albumentations: Fast and Flexible Image Augmentations,” <i>Information</i>, vol. 11, no. 2, p. 125, Feb. 2020 [Online]. Available: <a href="http://dx.doi.org/10.3390/info11020125">http://dx.doi.org/10.3390/info11020125</a>.</li>
-  <li>K. Simonyan en A. Zisserman, “Very Deep Convolutional Networks for Large-Scale Image Recognition”, <i>arXiv [cs.CV]. 2015</i>.</li>
+  <li>K. Simonyan en A. Zisserman, “Very Deep Convolutional Networks for Large-Scale Image Recognition”, <i>International Conference on Learning Representations</i>, 2015.</li>
   <li>J. Deng, W. Dong, R. Socher, L. Li, Kai Li and Li Fei-Fei, "ImageNet: A large-scale hierarchical image database," <i>2009 IEEE Conference on Computer Vision and Pattern Recognition</i>, 2009, pp. 248-255, doi: 10.1109/CVPR.2009.5206848.</li>
 </ol>
 </p>
